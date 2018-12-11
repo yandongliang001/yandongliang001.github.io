@@ -375,7 +375,8 @@ h4{
 			document.documentElement.scrollTop = i;
 			// console.log(document.documentElement.scrollHeight);
 			if(i === document.documentElement.scrollHeight){
-				window.location.reload();
+				document.documentElement.scrollTop = 0;
+				i = 0;
 			}
 		},10)
 	},13000)
